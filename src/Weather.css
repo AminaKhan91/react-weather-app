@@ -1,1 +1,138 @@
+.Weather {
+  border: 1px solid #dadde1;
+  margin-top: 30px;
+  max-width: 600px;
+  margin: 30 auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  background-size: contain;
+}
 
+body {
+  font-family: "Aladin", cursive;
+}
+
+.Weather h1 {
+  text-align: center;
+  color: #00204a;
+  margin-bottom: 0;
+}
+
+.Weather .ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+
+.Weather li:first-letter {
+  text-transform: capitalize;
+}
+
+.Weather .search-form {
+  text-align: center;
+}
+
+.Weather .text-input {
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  padding: 5px 10px;
+}
+
+.Weather .search {
+  background-color: #ff8364;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  width: 100;
+}
+
+.Weather .location-button {
+  background-color: #c51350;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  width: 100;
+}
+
+.Weather .date {
+  color: black;
+}
+
+.Weather .description {
+  color: black;
+}
+.Weather .col-6 {
+  margin-bottom: 20px;
+}
+
+.Weather .weather-temperature {
+  text-align: center;
+}
+.Weather .temperature {
+  color: black;
+  font-size: 45px;
+}
+
+.Weather .units {
+  position: relative;
+  font-size: 15px;
+  top: -20px;
+  color: black;
+}
+
+.Weather .weather-temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.Weather .weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.Weather .col-4 {
+  color: #f8f8f8;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+.col-2 {
+  border: 1px solid #302f2f;
+  transition: all 300ms ease-in-out;
+  border-radius: 30px;
+  border-spacing: 5px 1rem;
+  background-color: #ff847c;
+}
+
+.col-2:hover {
+  background-color: #e84a5f;
+  color: #2c2d34;
+}

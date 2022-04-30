@@ -1,6 +1,10 @@
 import "./App.css";
 import Weather from "./Weather.js";
 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+</style>;
+
 export default function App() {
   return (
     <div className="App">
