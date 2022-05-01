@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import ReactLoading from "react-loading";
 import "./Weather.css";
@@ -7,11 +8,10 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
-      date: "Sunday, 1 May 2022",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
       humidity: response.data.main.humidity,
@@ -39,7 +39,9 @@ export default function Weather(props) {
         <br />
         <div className="overview">
           <ul>
-            <li className="date">{weatherData.date}</li>
+            <li className="date">
+              <FormattedDate date={weatherData.date} />
+            </li>
             <li className="text-capitalize">{weatherData.description} </li>
           </ul>
         </div>
@@ -80,7 +82,7 @@ export default function Weather(props) {
     axios.get(apiurl).then(handleResponse);
 
     return (
-      <ReactLoading type="bubbles" color="black" height={667} width={375} />
+      <ReactLoading type="bubbles" color="#96C6FF" height={667} width={375} />
     );
   }
 }
