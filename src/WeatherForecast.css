@@ -1,0 +1,30 @@
+.WeatherForecast {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+
+.WeatherForecast .weather-forecast-date {
+  font-size: 16px;
+}
+
+.WeatherForecast .weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
+.WeatherForecast .weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+.WeatherForecast .col-2 {
+  border: 1px solid #302f2f;
+  transition: all 300ms ease-in-out;
+  border-radius: 30px;
+  border-spacing: 5px 1rem;
+  background-color: #ff9a3c;
+}
+
+.WeatherForecast .col-2:hover {
+  background-color: #ffc93c;
+  color: #2c2d34;
+}
