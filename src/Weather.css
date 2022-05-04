@@ -80,9 +80,11 @@ body {
 .Weather .weather-temperature {
   text-align: center;
 }
+
 .Weather .temperature {
   color: black;
   font-size: 45px;
+  margin-left: 10px;
 }
 
 .Weather .units {
