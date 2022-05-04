@@ -11,7 +11,7 @@ export default function App() {
           <a
             href="https://gracious-euclid-fb1db5.netlify.app/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Amina Khan{" "}
           </a>{" "}
@@ -20,7 +20,7 @@ export default function App() {
             href="
           https://github.com/AminaKhan91/react-weather-app"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             {" "}
             open sourced on GitHub
