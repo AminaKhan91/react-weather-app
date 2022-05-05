@@ -8,7 +8,6 @@
   border-radius: 10px;
   background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
   background-size: contain;
-  display: inline-block;
 }
 
 body {
