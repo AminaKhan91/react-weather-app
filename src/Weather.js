@@ -53,8 +53,52 @@ export default function Weather(props) {
   }
 
   if (weatherData.ready) {
+    let styles = {
+      backgroundColor:
+        "linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);",
+    };
+
+    if (
+      //sunny
+      weatherData.icon === "01d" ||
+      weatherData.icon === "01n" ||
+      weatherData.icon === "02d" ||
+      weatherData.icon === "02n"
+    ) {
+      styles.background = "#f5d98e";
+    } else if (
+      //clouds
+      weatherData.icon === "03d" ||
+      weatherData.icon === "03n" ||
+      weatherData.icon === "04d" ||
+      weatherData.icon === "04n"
+    ) {
+      styles.background = "#CECECE";
+    } else if (
+      //rain
+      weatherData.icon === "09d" ||
+      weatherData.icon === "09n" ||
+      weatherData.icon === "10d" ||
+      weatherData.icon === "10n"
+    ) {
+      styles.background = "#BBD5ED";
+    } else if (
+      //snow & mist
+      weatherData.icon === "13d" ||
+      weatherData.icon === "13n" ||
+      weatherData.icon === "50d" ||
+      weatherData.icon === "50n"
+    ) {
+      styles.background = "#D6E3F8";
+    } else if (
+      //thunderstorm
+      weatherData.icon === "11d" ||
+      weatherData.icon === "11n"
+    ) {
+      styles.background = "purple";
+    }
     return (
-      <div className="Weather">
+      <div className="Weather" style={styles}>
         <form className="search-form" onSubmit={handleSubmit}>
           <input
             type="search"
