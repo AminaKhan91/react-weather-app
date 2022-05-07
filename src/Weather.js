@@ -59,43 +59,66 @@ export default function Weather(props) {
     };
 
     if (
-      //sunny
+      //sunny day
       weatherData.icon === "01d" ||
-      weatherData.icon === "01n" ||
-      weatherData.icon === "02d" ||
-      weatherData.icon === "02n"
+      weatherData.icon === "02d"
     ) {
       styles.background = "#f5d98e";
     } else if (
-      //clouds
+      //sunny night
+      weatherData.icon === "01n" ||
+      weatherData.icon === "02n"
+    ) {
+      styles.background =
+        "linear-gradient(109.6deg, rgb(61, 121, 176) 11.3%, rgb(35, 66, 164) 91.1%)";
+    } else if (
+      //cloudy day
       weatherData.icon === "03d" ||
-      weatherData.icon === "03n" ||
-      weatherData.icon === "04d" ||
-      weatherData.icon === "04n"
+      weatherData.icon === "04d"
     ) {
       styles.background = "#CECECE";
     } else if (
-      //rain
+      //cloudy night
+      weatherData.icon === "03n" ||
+      weatherData.icon === "04n"
+    ) {
+      styles.background = "linear-gradient(to top, #09203f 0%, #537895 100%)";
+    } else if (
+      //rainy day
       weatherData.icon === "09d" ||
-      weatherData.icon === "09n" ||
-      weatherData.icon === "10d" ||
-      weatherData.icon === "10n"
+      weatherData.icon === "10d"
     ) {
       styles.background = "#BBD5ED";
     } else if (
-      //snow & mist
+      //rainy night
+      weatherData.icon === "09n" ||
+      weatherData.icon === "10n"
+    ) {
+      styles.background =
+        "linear-gradient(177.9deg, rgb(58, 62, 88) 3.6%, rgb(119, 127, 148) 105.8%)";
+    } else if (
+      //snowy & misty day
       weatherData.icon === "13d" ||
-      weatherData.icon === "13n" ||
-      weatherData.icon === "50d" ||
-      weatherData.icon === "50n"
+      weatherData.icon === "50d"
     ) {
       styles.background = "#D6E3F8";
     } else if (
-      //thunderstorm
-      weatherData.icon === "11d" ||
-      weatherData.icon === "11n"
+      //snowy and misty night
+      weatherData.icon === "13n" ||
+      weatherData.icon === "50n"
+    ) {
+      styles.background = "linear-gradient(to right, #868f96 0%, #596164 100%)";
+    } else if (
+      //day thunderstorm
+      weatherData.icon === "11d"
     ) {
       styles.background = "purple";
+    } else if (
+      //night thunderstorm
+      weatherData.icon === "11n"
+    ) {
+      styles.background =
+        "radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%)";
     }
     return (
       <div className="Weather" style={styles}>
