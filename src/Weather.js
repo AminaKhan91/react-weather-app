@@ -112,7 +112,7 @@ export default function Weather(props) {
       //day thunderstorm
       weatherData.icon === "11d"
     ) {
-      styles.background = "purple";
+      styles.background = "#8ca3a3";
     } else if (
       //night thunderstorm
       weatherData.icon === "11n"
