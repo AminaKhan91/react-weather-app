@@ -32,7 +32,7 @@ export default function WeatherForecast(props) {
           {forecast.map(function (dailyForecast, index) {
             if ((index < 7) & (index > 0)) {
               let styles = {
-                backgroundColor: "#ff9a3c;",
+                backgroundColor: "#ff9a3c",
               };
 
               if (
