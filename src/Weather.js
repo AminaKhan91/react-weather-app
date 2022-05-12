@@ -147,7 +147,7 @@ export default function Weather(props) {
   } else {
     search();
     return (
-      <ReactLoading type="bubbles" color="black" height={667} width={375} />
+      <ReactLoading type="bubbles" color="black" height={667} width={375} className="Loader" />
     );
   }
 }
